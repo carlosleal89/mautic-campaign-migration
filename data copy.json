@@ -1,0 +1,1259 @@
+{
+  "campaign": {
+      "isPublished": true,
+      "dateAdded": "2025-04-23T17:31:37+00:00",
+      "dateModified": "2025-04-25T13:26:05+00:00",
+      "createdBy": 1,
+      "createdByUser": "Avanti Avanti",
+      "modifiedBy": 1,
+      "modifiedByUser": "Avanti Avanti",
+      "id": 11,
+      "name": "Campanha de Adormecidos - TESTE12",
+      "category": null,
+      "description": "<p>Campanha que gerencia o intervalo de tempo que os contatos ficarão \"adormecidos\" da campanha de aquecimento.</p>\r\n\r\n<p>CAMPANHA PARA TESTAR A MIGRAÇÃO VIA API</p>",
+      "allowRestart": 1,
+      "publishUp": null,
+      "publishDown": null,
+      "events": [
+          {
+              "id": 249,
+              "name": "Veio de aquecimento? TESTE",
+              "description": null,
+              "type": "lead.tags",
+              "eventType": "condition",
+              "channel": null,
+              "channelId": 0,
+              "order": 1,
+              "properties": {
+                  "id": 249,
+                  "name": "Veio de aquecimento?",
+                  "description": null,
+                  "type": "lead.tags",
+                  "eventType": "condition",
+                  "order": 1,
+                  "properties": {
+                      "tags": [
+                          "11"
+                      ]
+                  },
+                  "triggerDate": null,
+                  "triggerInterval": "1",
+                  "triggerIntervalUnit": "d",
+                  "triggerHour": "",
+                  "triggerRestrictedStartHour": "",
+                  "triggerRestrictedStopHour": "",
+                  "triggerRestrictedDaysOfWeek": [],
+                  "triggerMode": "immediate",
+                  "decisionPath": null,
+                  "tempId": "new208",
+                  "contactLog": [],
+                  "channel": null,
+                  "channelId": 0,
+                  "changes": {
+                      "tempId": [
+                          null,
+                          "new208"
+                      ],
+                      "name": [
+                          null,
+                          "Veio de aquecimento?"
+                      ],
+                      "type": [
+                          null,
+                          "lead.tags"
+                      ],
+                      "eventType": [
+                          null,
+                          "condition"
+                      ],
+                      "order": [
+                          0,
+                          1
+                      ],
+                      "properties": [
+                          [],
+                          {
+                              "canvasSettings": {
+                                  "droppedX": "761",
+                                  "droppedY": "155"
+                              },
+                              "name": "Veio de aquecimento?",
+                              "triggerMode": "immediate",
+                              "triggerDate": null,
+                              "triggerInterval": "1",
+                              "triggerIntervalUnit": "d",
+                              "triggerHour": "",
+                              "triggerRestrictedStartHour": "",
+                              "triggerRestrictedStopHour": "",
+                              "anchor": "leadsource",
+                              "properties": {
+                                  "tags": [
+                                      "11"
+                                  ]
+                              },
+                              "type": "lead.tags",
+                              "eventType": "condition",
+                              "anchorEventType": "source",
+                              "campaignId": "8",
+                              "_token": "s2Od2OpuJBQpipAEFoVlZd_rsu6WD3x_5PRh-yAqlSs",
+                              "buttons": {
+                                  "save": ""
+                              },
+                              "tags": [
+                                  "adormecido"
+                              ]
+                          }
+                      ],
+                      "triggerInterval": [
+                          0,
+                          1
+                      ],
+                      "triggerIntervalUnit": [
+                          null,
+                          "d"
+                      ],
+                      "triggerMode": [
+                          null,
+                          "immediate"
+                      ]
+                  },
+                  "anchor": "leadsource",
+                  "anchorEventType": "source",
+                  "canvasSettings": {
+                      "droppedX": "761",
+                      "droppedY": "155"
+                  },
+                  "campaignId": "8",
+                  "_token": "s2Od2OpuJBQpipAEFoVlZd_rsu6WD3x_5PRh-yAqlSs",
+                  "buttons": {
+                      "save": ""
+                  },
+                  "tags": [
+                      "adormecido"
+                  ]
+              },
+              "triggerDate": null,
+              "triggerInterval": 1,
+              "triggerIntervalUnit": "d",
+              "triggerHour": null,
+              "triggerRestrictedStartHour": null,
+              "triggerRestrictedStopHour": null,
+              "triggerRestrictedDaysOfWeek": [],
+              "triggerMode": "immediate",
+              "decisionPath": null,
+              "parent": null,
+              "children": [
+                  {
+                      "id": 250,
+                      "name": "Atualizar vitrines - TESTE",
+                      "description": null,
+                      "type": "campaign.sendwebhook",
+                      "eventType": "action",
+                      "channel": null,
+                      "channelId": 0,
+                      "order": 2,
+                      "properties": {
+                          "id": 197,
+                          "name": "",
+                          "description": null,
+                          "type": "campaign.sendwebhook",
+                          "eventType": "action",
+                          "order": 2,
+                          "properties": {
+                              "url": "https://yrfyp2mxni.execute-api.us-east-1.amazonaws.com/webhook/warm-up-refresh",
+                              "method": "post",
+                              "headers": {
+                                  "list": [
+                                      {
+                                          "label": "Authorization",
+                                          "value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.e30.RIQ3VDw4ib0L8u3ycOvR0-CRW3942dXwQwV4VqViAlw"
+                                      }
+                                  ]
+                              },
+                              "timeout": "10"
+                          },
+                          "triggerDate": null,
+                          "triggerInterval": "1",
+                          "triggerIntervalUnit": "d",
+                          "triggerHour": "",
+                          "triggerRestrictedStartHour": "",
+                          "triggerRestrictedStopHour": "",
+                          "triggerRestrictedDaysOfWeek": [],
+                          "triggerMode": "immediate",
+                          "decisionPath": null,
+                          "tempId": "newe853b89e0cba687f5d4db6cb8a441e4def959789",
+                          "contactLog": [],
+                          "channel": null,
+                          "channelId": null,
+                          "changes": {
+                              "name": [
+                                  null,
+                                  "Send a webhook"
+                              ],
+                              "triggerMode": [
+                                  null,
+                                  "immediate"
+                              ],
+                              "triggerInterval": [
+                                  0,
+                                  1.0
+                              ],
+                              "triggerIntervalUnit": [
+                                  null,
+                                  "d"
+                              ],
+                              "properties": [
+                                  [],
+                                  {
+                                      "canvasSettings": {
+                                          "droppedX": "865",
+                                          "droppedY": "1372"
+                                      },
+                                      "name": "",
+                                      "triggerMode": "immediate",
+                                      "triggerDate": null,
+                                      "triggerInterval": "1",
+                                      "triggerIntervalUnit": "d",
+                                      "triggerHour": "",
+                                      "triggerRestrictedStartHour": "",
+                                      "triggerRestrictedStopHour": "",
+                                      "anchor": "bottom",
+                                      "properties": {
+                                          "url": "https://yrfyp2mxni.execute-api.us-east-1.amazonaws.com/webhook/warm-up-refresh",
+                                          "method": "post",
+                                          "headers": {
+                                              "list": [
+                                                  {
+                                                      "label": "Authorization",
+                                                      "value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.e30.RIQ3VDw4ib0L8u3ycOvR0-CRW3942dXwQwV4VqViAlw"
+                                                  }
+                                              ]
+                                          },
+                                          "timeout": "10"
+                                      },
+                                      "type": "campaign.sendwebhook",
+                                      "eventType": "action",
+                                      "anchorEventType": "action",
+                                      "campaignId": "8",
+                                      "_token": "Qj9alILjJkJ9en5do3xib7VZJo7tQmO2SdPQPISYFiw",
+                                      "buttons": {
+                                          "save": ""
+                                      },
+                                      "url": "https://yrfyp2mxni.execute-api.us-east-1.amazonaws.com/webhook/warm-up-refresh",
+                                      "method": "post",
+                                      "headers": {
+                                          "list": [
+                                              {
+                                                  "label": "Authorization",
+                                                  "value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.e30.RIQ3VDw4ib0L8u3ycOvR0-CRW3942dXwQwV4VqViAlw"
+                                              }
+                                          ]
+                                      },
+                                      "timeout": 10.0,
+                                      "additional_data": {
+                                          "list": []
+                                      }
+                                  }
+                              ],
+                              "type": [
+                                  null,
+                                  "campaign.sendwebhook"
+                              ],
+                              "eventType": [
+                                  null,
+                                  "action"
+                              ],
+                              "tempId": [
+                                  null,
+                                  "newe853b89e0cba687f5d4db6cb8a441e4def959789"
+                              ],
+                              "parent": [
+                                  "",
+                                  188
+                              ],
+                              "order": [
+                                  0,
+                                  2
+                              ]
+                          },
+                          "label": "wait 1 minute",
+                          "anchor": "bottom",
+                          "anchorEventType": "action",
+                          "settings": {
+                              "label": "Send a webhook",
+                              "description": "Send a webhook (only for experienced users)",
+                              "formType": "Mautic\\WebhookBundle\\Form\\Type\\CampaignEventSendWebhookType",
+                              "formTypeCleanMasks": "clean",
+                              "eventName": "mautic.webhook.campaign_on_trigger_action"
+                          },
+                          "canvasSettings": {
+                              "droppedX": "865",
+                              "droppedY": "1372"
+                          },
+                          "campaignId": "8",
+                          "_token": "Qj9alILjJkJ9en5do3xib7VZJo7tQmO2SdPQPISYFiw",
+                          "buttons": {
+                              "save": ""
+                          },
+                          "url": "https://yrfyp2mxni.execute-api.us-east-1.amazonaws.com/webhook/warm-up-refresh",
+                          "method": "post",
+                          "headers": {
+                              "list": [
+                                  {
+                                      "label": "Authorization",
+                                      "value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.e30.RIQ3VDw4ib0L8u3ycOvR0-CRW3942dXwQwV4VqViAlw"
+                                  }
+                              ]
+                          },
+                          "timeout": 10.0,
+                          "additional_data": {
+                              "list": [
+                                  {
+                                      "label": "account",
+                                      "value": "avantisales"
+                                  },
+                                  {
+                                      "label": "email",
+                                      "value": "{contactfield=email}"
+                                  }
+                              ]
+                          }
+                      },
+                      "triggerDate": null,
+                      "triggerInterval": 5,
+                      "triggerIntervalUnit": "i",
+                      "triggerHour": null,
+                      "triggerRestrictedStartHour": null,
+                      "triggerRestrictedStopHour": null,
+                      "triggerRestrictedDaysOfWeek": [],
+                      "triggerMode": "immediate",
+                      "decisionPath": "yes",
+                      "children": [
+                          {
+                              "id": 252,
+                              "name": "Reinicia a campanha de aquecimento",
+                              "description": null,
+                              "type": "lead.changetags",
+                              "eventType": "action",
+                              "channel": null,
+                              "channelId": 0,
+                              "order": 3,
+                              "properties": {
+                                  "id": 188,
+                                  "name": "Reinicia a campanha de aquecimento",
+                                  "description": null,
+                                  "type": "lead.changetags",
+                                  "eventType": "action",
+                                  "order": 3,
+                                  "properties": {
+                                      "add_tags": [
+                                          "5"
+                                      ],
+                                      "remove_tags": [
+                                          "11"
+                                      ]
+                                  },
+                                  "triggerDate": null,
+                                  "triggerInterval": "1",
+                                  "triggerIntervalUnit": "d",
+                                  "triggerHour": "",
+                                  "triggerRestrictedStartHour": "",
+                                  "triggerRestrictedStopHour": "",
+                                  "triggerRestrictedDaysOfWeek": [],
+                                  "triggerMode": "immediate",
+                                  "decisionPath": "no",
+                                  "tempId": "newfb0a213abc24a0deb7376542304a5f9a4f242f68",
+                                  "contactLog": [],
+                                  "channel": null,
+                                  "channelId": 0,
+                                  "changes": [],
+                                  "label": "wait 45 days",
+                                  "anchor": "no",
+                                  "anchorEventType": "condition",
+                                  "settings": {
+                                      "label": "Modify contact's tags",
+                                      "description": "Add tag to or remove tag from contact",
+                                      "formType": "Mautic\\LeadBundle\\Form\\Type\\ModifyLeadTagsType",
+                                      "eventName": "mautic.lead.on_campaign_trigger_action"
+                                  },
+                                  "canvasSettings": {
+                                      "droppedX": "957",
+                                      "droppedY": "306"
+                                  },
+                                  "campaignId": "mautic_1578f5d9a23c25201f360afaae122178b15199a9",
+                                  "_token": "DOy9EJgyzwYU0Jqy7dIkuJG2h2g_YVYyBpkSKn_RxfU",
+                                  "buttons": {
+                                      "save": ""
+                                  },
+                                  "add_tags": [
+                                      "campanha-de-aquecimento"
+                                  ],
+                                  "remove_tags": [
+                                      "adormecido",
+                                      "pos-boleto",
+                                      "pos-carrinho"
+                                  ]
+                              },
+                              "triggerDate": null,
+                              "triggerInterval": 1,
+                              "triggerIntervalUnit": "i",
+                              "triggerHour": null,
+                              "triggerRestrictedStartHour": null,
+                              "triggerRestrictedStopHour": null,
+                              "triggerRestrictedDaysOfWeek": [],
+                              "triggerMode": "immediate",
+                              "decisionPath": null
+                          }
+                      ]
+                  }
+              ]
+          },
+          {
+              "id": 250,
+              "name": "Atualizar vitrines - TESTE",
+              "description": null,
+              "type": "campaign.sendwebhook",
+              "eventType": "action",
+              "channel": null,
+              "channelId": 0,
+              "order": 2,
+              "properties": {
+                  "id": 197,
+                  "name": "",
+                  "description": null,
+                  "type": "campaign.sendwebhook",
+                  "eventType": "action",
+                  "order": 2,
+                  "properties": {
+                      "url": "https://yrfyp2mxni.execute-api.us-east-1.amazonaws.com/webhook/warm-up-refresh",
+                      "method": "post",
+                      "headers": {
+                          "list": [
+                              {
+                                  "label": "Authorization",
+                                  "value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.e30.RIQ3VDw4ib0L8u3ycOvR0-CRW3942dXwQwV4VqViAlw"
+                              }
+                          ]
+                      },
+                      "timeout": "10"
+                  },
+                  "triggerDate": null,
+                  "triggerInterval": "1",
+                  "triggerIntervalUnit": "d",
+                  "triggerHour": "",
+                  "triggerRestrictedStartHour": "",
+                  "triggerRestrictedStopHour": "",
+                  "triggerRestrictedDaysOfWeek": [],
+                  "triggerMode": "immediate",
+                  "decisionPath": null,
+                  "tempId": "newe853b89e0cba687f5d4db6cb8a441e4def959789",
+                  "contactLog": [],
+                  "channel": null,
+                  "channelId": null,
+                  "changes": {
+                      "name": [
+                          null,
+                          "Send a webhook"
+                      ],
+                      "triggerMode": [
+                          null,
+                          "immediate"
+                      ],
+                      "triggerInterval": [
+                          0,
+                          1.0
+                      ],
+                      "triggerIntervalUnit": [
+                          null,
+                          "d"
+                      ],
+                      "properties": [
+                          [],
+                          {
+                              "canvasSettings": {
+                                  "droppedX": "865",
+                                  "droppedY": "1372"
+                              },
+                              "name": "",
+                              "triggerMode": "immediate",
+                              "triggerDate": null,
+                              "triggerInterval": "1",
+                              "triggerIntervalUnit": "d",
+                              "triggerHour": "",
+                              "triggerRestrictedStartHour": "",
+                              "triggerRestrictedStopHour": "",
+                              "anchor": "bottom",
+                              "properties": {
+                                  "url": "https://yrfyp2mxni.execute-api.us-east-1.amazonaws.com/webhook/warm-up-refresh",
+                                  "method": "post",
+                                  "headers": {
+                                      "list": [
+                                          {
+                                              "label": "Authorization",
+                                              "value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.e30.RIQ3VDw4ib0L8u3ycOvR0-CRW3942dXwQwV4VqViAlw"
+                                          }
+                                      ]
+                                  },
+                                  "timeout": "10"
+                              },
+                              "type": "campaign.sendwebhook",
+                              "eventType": "action",
+                              "anchorEventType": "action",
+                              "campaignId": "8",
+                              "_token": "Qj9alILjJkJ9en5do3xib7VZJo7tQmO2SdPQPISYFiw",
+                              "buttons": {
+                                  "save": ""
+                              },
+                              "url": "https://yrfyp2mxni.execute-api.us-east-1.amazonaws.com/webhook/warm-up-refresh",
+                              "method": "post",
+                              "headers": {
+                                  "list": [
+                                      {
+                                          "label": "Authorization",
+                                          "value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.e30.RIQ3VDw4ib0L8u3ycOvR0-CRW3942dXwQwV4VqViAlw"
+                                      }
+                                  ]
+                              },
+                              "timeout": 10.0,
+                              "additional_data": {
+                                  "list": []
+                              }
+                          }
+                      ],
+                      "type": [
+                          null,
+                          "campaign.sendwebhook"
+                      ],
+                      "eventType": [
+                          null,
+                          "action"
+                      ],
+                      "tempId": [
+                          null,
+                          "newe853b89e0cba687f5d4db6cb8a441e4def959789"
+                      ],
+                      "parent": [
+                          "",
+                          188
+                      ],
+                      "order": [
+                          0,
+                          2
+                      ]
+                  },
+                  "label": "wait 1 minute",
+                  "anchor": "bottom",
+                  "anchorEventType": "action",
+                  "settings": {
+                      "label": "Send a webhook",
+                      "description": "Send a webhook (only for experienced users)",
+                      "formType": "Mautic\\WebhookBundle\\Form\\Type\\CampaignEventSendWebhookType",
+                      "formTypeCleanMasks": "clean",
+                      "eventName": "mautic.webhook.campaign_on_trigger_action"
+                  },
+                  "canvasSettings": {
+                      "droppedX": "865",
+                      "droppedY": "1372"
+                  },
+                  "campaignId": "8",
+                  "_token": "Qj9alILjJkJ9en5do3xib7VZJo7tQmO2SdPQPISYFiw",
+                  "buttons": {
+                      "save": ""
+                  },
+                  "url": "https://yrfyp2mxni.execute-api.us-east-1.amazonaws.com/webhook/warm-up-refresh",
+                  "method": "post",
+                  "headers": {
+                      "list": [
+                          {
+                              "label": "Authorization",
+                              "value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.e30.RIQ3VDw4ib0L8u3ycOvR0-CRW3942dXwQwV4VqViAlw"
+                          }
+                      ]
+                  },
+                  "timeout": 10.0,
+                  "additional_data": {
+                      "list": [
+                          {
+                              "label": "account",
+                              "value": "avantisales"
+                          },
+                          {
+                              "label": "email",
+                              "value": "{contactfield=email}"
+                          }
+                      ]
+                  }
+              },
+              "triggerDate": null,
+              "triggerInterval": 5,
+              "triggerIntervalUnit": "i",
+              "triggerHour": null,
+              "triggerRestrictedStartHour": null,
+              "triggerRestrictedStopHour": null,
+              "triggerRestrictedDaysOfWeek": [],
+              "triggerMode": "immediate",
+              "decisionPath": "yes",
+              "parent": {
+                  "id": 249,
+                  "name": "Veio de aquecimento? TESTE",
+                  "description": null,
+                  "type": "lead.tags",
+                  "eventType": "condition",
+                  "channel": null,
+                  "channelId": 0,
+                  "order": 1,
+                  "properties": {
+                      "id": 249,
+                      "name": "Veio de aquecimento?",
+                      "description": null,
+                      "type": "lead.tags",
+                      "eventType": "condition",
+                      "order": 1,
+                      "properties": {
+                          "tags": [
+                              "11"
+                          ]
+                      },
+                      "triggerDate": null,
+                      "triggerInterval": "1",
+                      "triggerIntervalUnit": "d",
+                      "triggerHour": "",
+                      "triggerRestrictedStartHour": "",
+                      "triggerRestrictedStopHour": "",
+                      "triggerRestrictedDaysOfWeek": [],
+                      "triggerMode": "immediate",
+                      "decisionPath": null,
+                      "tempId": "new208",
+                      "contactLog": [],
+                      "channel": null,
+                      "channelId": 0,
+                      "changes": {
+                          "tempId": [
+                              null,
+                              "new208"
+                          ],
+                          "name": [
+                              null,
+                              "Veio de aquecimento?"
+                          ],
+                          "type": [
+                              null,
+                              "lead.tags"
+                          ],
+                          "eventType": [
+                              null,
+                              "condition"
+                          ],
+                          "order": [
+                              0,
+                              1
+                          ],
+                          "properties": [
+                              [],
+                              {
+                                  "canvasSettings": {
+                                      "droppedX": "761",
+                                      "droppedY": "155"
+                                  },
+                                  "name": "Veio de aquecimento?",
+                                  "triggerMode": "immediate",
+                                  "triggerDate": null,
+                                  "triggerInterval": "1",
+                                  "triggerIntervalUnit": "d",
+                                  "triggerHour": "",
+                                  "triggerRestrictedStartHour": "",
+                                  "triggerRestrictedStopHour": "",
+                                  "anchor": "leadsource",
+                                  "properties": {
+                                      "tags": [
+                                          "11"
+                                      ]
+                                  },
+                                  "type": "lead.tags",
+                                  "eventType": "condition",
+                                  "anchorEventType": "source",
+                                  "campaignId": "8",
+                                  "_token": "s2Od2OpuJBQpipAEFoVlZd_rsu6WD3x_5PRh-yAqlSs",
+                                  "buttons": {
+                                      "save": ""
+                                  },
+                                  "tags": [
+                                      "adormecido"
+                                  ]
+                              }
+                          ],
+                          "triggerInterval": [
+                              0,
+                              1
+                          ],
+                          "triggerIntervalUnit": [
+                              null,
+                              "d"
+                          ],
+                          "triggerMode": [
+                              null,
+                              "immediate"
+                          ]
+                      },
+                      "anchor": "leadsource",
+                      "anchorEventType": "source",
+                      "canvasSettings": {
+                          "droppedX": "761",
+                          "droppedY": "155"
+                      },
+                      "campaignId": "8",
+                      "_token": "s2Od2OpuJBQpipAEFoVlZd_rsu6WD3x_5PRh-yAqlSs",
+                      "buttons": {
+                          "save": ""
+                      },
+                      "tags": [
+                          "adormecido"
+                      ]
+                  },
+                  "triggerDate": null,
+                  "triggerInterval": 1,
+                  "triggerIntervalUnit": "d",
+                  "triggerHour": null,
+                  "triggerRestrictedStartHour": null,
+                  "triggerRestrictedStopHour": null,
+                  "triggerRestrictedDaysOfWeek": [],
+                  "triggerMode": "immediate",
+                  "decisionPath": null,
+                  "parent": null,
+                  "children": []
+              },
+              "children": [
+                  {
+                      "id": 252,
+                      "name": "Reinicia a campanha de aquecimento",
+                      "description": null,
+                      "type": "lead.changetags",
+                      "eventType": "action",
+                      "channel": null,
+                      "channelId": 0,
+                      "order": 3,
+                      "properties": {
+                          "id": 188,
+                          "name": "Reinicia a campanha de aquecimento",
+                          "description": null,
+                          "type": "lead.changetags",
+                          "eventType": "action",
+                          "order": 3,
+                          "properties": {
+                              "add_tags": [
+                                  "5"
+                              ],
+                              "remove_tags": [
+                                  "11"
+                              ]
+                          },
+                          "triggerDate": null,
+                          "triggerInterval": "1",
+                          "triggerIntervalUnit": "d",
+                          "triggerHour": "",
+                          "triggerRestrictedStartHour": "",
+                          "triggerRestrictedStopHour": "",
+                          "triggerRestrictedDaysOfWeek": [],
+                          "triggerMode": "immediate",
+                          "decisionPath": "no",
+                          "tempId": "newfb0a213abc24a0deb7376542304a5f9a4f242f68",
+                          "contactLog": [],
+                          "channel": null,
+                          "channelId": 0,
+                          "changes": [],
+                          "label": "wait 45 days",
+                          "anchor": "no",
+                          "anchorEventType": "condition",
+                          "settings": {
+                              "label": "Modify contact's tags",
+                              "description": "Add tag to or remove tag from contact",
+                              "formType": "Mautic\\LeadBundle\\Form\\Type\\ModifyLeadTagsType",
+                              "eventName": "mautic.lead.on_campaign_trigger_action"
+                          },
+                          "canvasSettings": {
+                              "droppedX": "957",
+                              "droppedY": "306"
+                          },
+                          "campaignId": "mautic_1578f5d9a23c25201f360afaae122178b15199a9",
+                          "_token": "DOy9EJgyzwYU0Jqy7dIkuJG2h2g_YVYyBpkSKn_RxfU",
+                          "buttons": {
+                              "save": ""
+                          },
+                          "add_tags": [
+                              "campanha-de-aquecimento"
+                          ],
+                          "remove_tags": [
+                              "adormecido",
+                              "pos-boleto",
+                              "pos-carrinho"
+                          ]
+                      },
+                      "triggerDate": null,
+                      "triggerInterval": 1,
+                      "triggerIntervalUnit": "i",
+                      "triggerHour": null,
+                      "triggerRestrictedStartHour": null,
+                      "triggerRestrictedStopHour": null,
+                      "triggerRestrictedDaysOfWeek": [],
+                      "triggerMode": "immediate",
+                      "decisionPath": null,
+                      "children": []
+                  }
+              ]
+          },
+          {
+              "id": 252,
+              "name": "Reinicia a campanha de aquecimento",
+              "description": null,
+              "type": "lead.changetags",
+              "eventType": "action",
+              "channel": null,
+              "channelId": 0,
+              "order": 3,
+              "properties": {
+                  "id": 188,
+                  "name": "Reinicia a campanha de aquecimento",
+                  "description": null,
+                  "type": "lead.changetags",
+                  "eventType": "action",
+                  "order": 3,
+                  "properties": {
+                      "add_tags": [
+                          "5"
+                      ],
+                      "remove_tags": [
+                          "11"
+                      ]
+                  },
+                  "triggerDate": null,
+                  "triggerInterval": "1",
+                  "triggerIntervalUnit": "d",
+                  "triggerHour": "",
+                  "triggerRestrictedStartHour": "",
+                  "triggerRestrictedStopHour": "",
+                  "triggerRestrictedDaysOfWeek": [],
+                  "triggerMode": "immediate",
+                  "decisionPath": "no",
+                  "tempId": "newfb0a213abc24a0deb7376542304a5f9a4f242f68",
+                  "contactLog": [],
+                  "channel": null,
+                  "channelId": 0,
+                  "changes": [],
+                  "label": "wait 45 days",
+                  "anchor": "no",
+                  "anchorEventType": "condition",
+                  "settings": {
+                      "label": "Modify contact's tags",
+                      "description": "Add tag to or remove tag from contact",
+                      "formType": "Mautic\\LeadBundle\\Form\\Type\\ModifyLeadTagsType",
+                      "eventName": "mautic.lead.on_campaign_trigger_action"
+                  },
+                  "canvasSettings": {
+                      "droppedX": "957",
+                      "droppedY": "306"
+                  },
+                  "campaignId": "mautic_1578f5d9a23c25201f360afaae122178b15199a9",
+                  "_token": "DOy9EJgyzwYU0Jqy7dIkuJG2h2g_YVYyBpkSKn_RxfU",
+                  "buttons": {
+                      "save": ""
+                  },
+                  "add_tags": [
+                      "campanha-de-aquecimento"
+                  ],
+                  "remove_tags": [
+                      "adormecido",
+                      "pos-boleto",
+                      "pos-carrinho"
+                  ]
+              },
+              "triggerDate": null,
+              "triggerInterval": 1,
+              "triggerIntervalUnit": "i",
+              "triggerHour": null,
+              "triggerRestrictedStartHour": null,
+              "triggerRestrictedStopHour": null,
+              "triggerRestrictedDaysOfWeek": [],
+              "triggerMode": "immediate",
+              "decisionPath": null,
+              "parent": {
+                  "id": 250,
+                  "name": "Atualizar vitrines - TESTE",
+                  "description": null,
+                  "type": "campaign.sendwebhook",
+                  "eventType": "action",
+                  "channel": null,
+                  "channelId": 0,
+                  "order": 2,
+                  "properties": {
+                      "id": 197,
+                      "name": "",
+                      "description": null,
+                      "type": "campaign.sendwebhook",
+                      "eventType": "action",
+                      "order": 2,
+                      "properties": {
+                          "url": "https://yrfyp2mxni.execute-api.us-east-1.amazonaws.com/webhook/warm-up-refresh",
+                          "method": "post",
+                          "headers": {
+                              "list": [
+                                  {
+                                      "label": "Authorization",
+                                      "value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.e30.RIQ3VDw4ib0L8u3ycOvR0-CRW3942dXwQwV4VqViAlw"
+                                  }
+                              ]
+                          },
+                          "timeout": "10"
+                      },
+                      "triggerDate": null,
+                      "triggerInterval": "1",
+                      "triggerIntervalUnit": "d",
+                      "triggerHour": "",
+                      "triggerRestrictedStartHour": "",
+                      "triggerRestrictedStopHour": "",
+                      "triggerRestrictedDaysOfWeek": [],
+                      "triggerMode": "immediate",
+                      "decisionPath": null,
+                      "tempId": "newe853b89e0cba687f5d4db6cb8a441e4def959789",
+                      "contactLog": [],
+                      "channel": null,
+                      "channelId": null,
+                      "changes": {
+                          "name": [
+                              null,
+                              "Send a webhook"
+                          ],
+                          "triggerMode": [
+                              null,
+                              "immediate"
+                          ],
+                          "triggerInterval": [
+                              0,
+                              1.0
+                          ],
+                          "triggerIntervalUnit": [
+                              null,
+                              "d"
+                          ],
+                          "properties": [
+                              [],
+                              {
+                                  "canvasSettings": {
+                                      "droppedX": "865",
+                                      "droppedY": "1372"
+                                  },
+                                  "name": "",
+                                  "triggerMode": "immediate",
+                                  "triggerDate": null,
+                                  "triggerInterval": "1",
+                                  "triggerIntervalUnit": "d",
+                                  "triggerHour": "",
+                                  "triggerRestrictedStartHour": "",
+                                  "triggerRestrictedStopHour": "",
+                                  "anchor": "bottom",
+                                  "properties": {
+                                      "url": "https://yrfyp2mxni.execute-api.us-east-1.amazonaws.com/webhook/warm-up-refresh",
+                                      "method": "post",
+                                      "headers": {
+                                          "list": [
+                                              {
+                                                  "label": "Authorization",
+                                                  "value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.e30.RIQ3VDw4ib0L8u3ycOvR0-CRW3942dXwQwV4VqViAlw"
+                                              }
+                                          ]
+                                      },
+                                      "timeout": "10"
+                                  },
+                                  "type": "campaign.sendwebhook",
+                                  "eventType": "action",
+                                  "anchorEventType": "action",
+                                  "campaignId": "8",
+                                  "_token": "Qj9alILjJkJ9en5do3xib7VZJo7tQmO2SdPQPISYFiw",
+                                  "buttons": {
+                                      "save": ""
+                                  },
+                                  "url": "https://yrfyp2mxni.execute-api.us-east-1.amazonaws.com/webhook/warm-up-refresh",
+                                  "method": "post",
+                                  "headers": {
+                                      "list": [
+                                          {
+                                              "label": "Authorization",
+                                              "value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.e30.RIQ3VDw4ib0L8u3ycOvR0-CRW3942dXwQwV4VqViAlw"
+                                          }
+                                      ]
+                                  },
+                                  "timeout": 10.0,
+                                  "additional_data": {
+                                      "list": []
+                                  }
+                              }
+                          ],
+                          "type": [
+                              null,
+                              "campaign.sendwebhook"
+                          ],
+                          "eventType": [
+                              null,
+                              "action"
+                          ],
+                          "tempId": [
+                              null,
+                              "newe853b89e0cba687f5d4db6cb8a441e4def959789"
+                          ],
+                          "parent": [
+                              "",
+                              188
+                          ],
+                          "order": [
+                              0,
+                              2
+                          ]
+                      },
+                      "label": "wait 1 minute",
+                      "anchor": "bottom",
+                      "anchorEventType": "action",
+                      "settings": {
+                          "label": "Send a webhook",
+                          "description": "Send a webhook (only for experienced users)",
+                          "formType": "Mautic\\WebhookBundle\\Form\\Type\\CampaignEventSendWebhookType",
+                          "formTypeCleanMasks": "clean",
+                          "eventName": "mautic.webhook.campaign_on_trigger_action"
+                      },
+                      "canvasSettings": {
+                          "droppedX": "865",
+                          "droppedY": "1372"
+                      },
+                      "campaignId": "8",
+                      "_token": "Qj9alILjJkJ9en5do3xib7VZJo7tQmO2SdPQPISYFiw",
+                      "buttons": {
+                          "save": ""
+                      },
+                      "url": "https://yrfyp2mxni.execute-api.us-east-1.amazonaws.com/webhook/warm-up-refresh",
+                      "method": "post",
+                      "headers": {
+                          "list": [
+                              {
+                                  "label": "Authorization",
+                                  "value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.e30.RIQ3VDw4ib0L8u3ycOvR0-CRW3942dXwQwV4VqViAlw"
+                              }
+                          ]
+                      },
+                      "timeout": 10.0,
+                      "additional_data": {
+                          "list": [
+                              {
+                                  "label": "account",
+                                  "value": "avantisales"
+                              },
+                              {
+                                  "label": "email",
+                                  "value": "{contactfield=email}"
+                              }
+                          ]
+                      }
+                  },
+                  "triggerDate": null,
+                  "triggerInterval": 5,
+                  "triggerIntervalUnit": "i",
+                  "triggerHour": null,
+                  "triggerRestrictedStartHour": null,
+                  "triggerRestrictedStopHour": null,
+                  "triggerRestrictedDaysOfWeek": [],
+                  "triggerMode": "immediate",
+                  "decisionPath": "yes",
+                  "parent": {
+                      "id": 249,
+                      "name": "Veio de aquecimento? TESTE",
+                      "description": null,
+                      "type": "lead.tags",
+                      "eventType": "condition",
+                      "channel": null,
+                      "channelId": 0,
+                      "order": 1,
+                      "properties": {
+                          "id": 249,
+                          "name": "Veio de aquecimento?",
+                          "description": null,
+                          "type": "lead.tags",
+                          "eventType": "condition",
+                          "order": 1,
+                          "properties": {
+                              "tags": [
+                                  "11"
+                              ]
+                          },
+                          "triggerDate": null,
+                          "triggerInterval": "1",
+                          "triggerIntervalUnit": "d",
+                          "triggerHour": "",
+                          "triggerRestrictedStartHour": "",
+                          "triggerRestrictedStopHour": "",
+                          "triggerRestrictedDaysOfWeek": [],
+                          "triggerMode": "immediate",
+                          "decisionPath": null,
+                          "tempId": "new208",
+                          "contactLog": [],
+                          "channel": null,
+                          "channelId": 0,
+                          "changes": {
+                              "tempId": [
+                                  null,
+                                  "new208"
+                              ],
+                              "name": [
+                                  null,
+                                  "Veio de aquecimento?"
+                              ],
+                              "type": [
+                                  null,
+                                  "lead.tags"
+                              ],
+                              "eventType": [
+                                  null,
+                                  "condition"
+                              ],
+                              "order": [
+                                  0,
+                                  1
+                              ],
+                              "properties": [
+                                  [],
+                                  {
+                                      "canvasSettings": {
+                                          "droppedX": "761",
+                                          "droppedY": "155"
+                                      },
+                                      "name": "Veio de aquecimento?",
+                                      "triggerMode": "immediate",
+                                      "triggerDate": null,
+                                      "triggerInterval": "1",
+                                      "triggerIntervalUnit": "d",
+                                      "triggerHour": "",
+                                      "triggerRestrictedStartHour": "",
+                                      "triggerRestrictedStopHour": "",
+                                      "anchor": "leadsource",
+                                      "properties": {
+                                          "tags": [
+                                              "11"
+                                          ]
+                                      },
+                                      "type": "lead.tags",
+                                      "eventType": "condition",
+                                      "anchorEventType": "source",
+                                      "campaignId": "8",
+                                      "_token": "s2Od2OpuJBQpipAEFoVlZd_rsu6WD3x_5PRh-yAqlSs",
+                                      "buttons": {
+                                          "save": ""
+                                      },
+                                      "tags": [
+                                          "adormecido"
+                                      ]
+                                  }
+                              ],
+                              "triggerInterval": [
+                                  0,
+                                  1
+                              ],
+                              "triggerIntervalUnit": [
+                                  null,
+                                  "d"
+                              ],
+                              "triggerMode": [
+                                  null,
+                                  "immediate"
+                              ]
+                          },
+                          "anchor": "leadsource",
+                          "anchorEventType": "source",
+                          "canvasSettings": {
+                              "droppedX": "761",
+                              "droppedY": "155"
+                          },
+                          "campaignId": "8",
+                          "_token": "s2Od2OpuJBQpipAEFoVlZd_rsu6WD3x_5PRh-yAqlSs",
+                          "buttons": {
+                              "save": ""
+                          },
+                          "tags": [
+                              "adormecido"
+                          ]
+                      },
+                      "triggerDate": null,
+                      "triggerInterval": 1,
+                      "triggerIntervalUnit": "d",
+                      "triggerHour": null,
+                      "triggerRestrictedStartHour": null,
+                      "triggerRestrictedStopHour": null,
+                      "triggerRestrictedDaysOfWeek": [],
+                      "triggerMode": "immediate",
+                      "decisionPath": null
+                  },
+                  "children": []
+              },
+              "children": []
+          }
+      ],
+      "forms": [],
+      "lists": [
+          {
+              "createdByUser": "Avanti Avanti",
+              "modifiedByUser": " ",
+              "id": 12,
+              "name": "Segmento de adormecidos",
+              "publicName": "Segmento de adormecidos",
+              "alias": "sleeping-warm-up",
+              "description": null,
+              "category": null
+          }
+      ],
+      "canvasSettings": {
+          "nodes": [
+              {
+                  "id": "249",
+                  "positionX": "865",
+                  "positionY": "167"
+              },
+              {
+                  "id": "250",
+                  "positionX": "866",
+                  "positionY": "301"
+              },
+              {
+                  "id": "252",
+                  "positionX": "871",
+                  "positionY": "436"
+              },
+              {
+                  "id": "lists",
+                  "positionX": "861",
+                  "positionY": "50"
+              }
+          ],
+          "connections": [
+              {
+                  "sourceId": "250",
+                  "targetId": "252",
+                  "anchors": {
+                      "source": "bottom",
+                      "target": "top"
+                  }
+              },
+              {
+                  "sourceId": "lists",
+                  "targetId": "249",
+                  "anchors": {
+                      "source": "leadsource",
+                      "target": "top"
+                  }
+              },
+              {
+                  "sourceId": "249",
+                  "targetId": "250",
+                  "anchors": {
+                      "source": "yes",
+                      "target": "top"
+                  }
+              }
+          ]
+      }
+  }
+}
