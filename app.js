@@ -24,9 +24,28 @@ const formatCampaignIds = (campaignJson) => {
       // Altera o id do evento
       event.id = `new${event.id}`
 
+      event.properties.jumpToEvent = `new${event.properties.jumpToEvent}`
+      
       // Altera os ids do children do evento
-      event.children.forEach((child) => {
-        child.id = `new${child.id}`        
+      event.children.forEach((childEl) => {
+        
+        childEl.id = `new${childEl.id}`
+        if (childEl.properties.additional_data) {
+          childEl.properties.additional_data.list.forEach((listEl) => {
+            if (listEl.label ===  'account') {
+              listEl.value = `new${listEl.value}`
+            }
+          })
+        }
+        console.log("child", childEl.properties.additional_data);
+        
+        childEl.children.forEach((childChild) => {
+          
+          childChild.id = `new${childChild.id}`
+
+          childChild.properties.jumpToEvent = `new${childChild.properties.jumpToEvent}`
+          childChild.properties.properties.jumpToEvent = `new${childChild.properties.properties.jumpToEvent}`
+        });
       });
       
       // Altera os ids dos parent do evento
@@ -93,5 +112,5 @@ const postCampaignData = async () => {
   }
 };
 
-postCampaignData();
+// postCampaignData();
 
